@@ -1,0 +1,104 @@
+/* Genel Stil */
+main {
+    padding-top: 75px;
+}
+
+/* İletişim Bölümü */
+#iletişim-kismi {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out; /* İletişim bölümüne animasyon */
+}
+
+#iletişim {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    transform: scale(0.98);
+    animation: scaleUp 0.5s ease-in-out forwards; /* İletişim kutusunun büyüme animasyonu */
+}
+
+#iletişim h1 {
+    font-size: 3rem;
+    color: #3586ff;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Başlık büyük harf */
+    letter-spacing: 1px; /* Harf aralığı */
+    animation: slideIn 1s ease-out; /* Başlık için kayma animasyonu */
+}
+
+#veri-kismi p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+#veri-kismi a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+#veri-kismi a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    padding-bottom: 2px; /* Alt çizgi animasyonu */
+}
+
+#veri-kismi a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0056b3;
+    transition: width 0.3s ease; /* Alt çizgi genişlemesi */
+}
+
+#veri-kismi a:hover::after {
+    width: 100%; /* Alt çizgi genişlesin */
+}
+
+#tanişma-kismi {
+    margin-top: 50px;
+}
+
+#tanişma-kismi h2 {
+    color: #3586ff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInUp 1.5s ease-out; /* Alt başlık için yukarı kayma animasyonu */
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    0% { transform: scale(0.98); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-50px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

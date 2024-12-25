@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enflasyon Hesaplama / Hesaplayıcı</title>
+    <link rel="icon" sizes="32x32" type="image/png" href="/img-icon/hesaplayıcı_icon.png">
+    <link rel="stylesheet" href="/style/styles.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/calculates.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PLJJHXMQ');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLJJHXMQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <a id="logo" href="/index.html"><img src="/img-icon/hesaplayıcı_logo.svg" alt="hesaplayıcı-logo"></a>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a id="menu-anasayfa" class="menu-text" href="/index.html">Anasayfa</a>
+                </li>
+                <li id="menu-matematik" class="menu-item dropdown">
+                    Matematik
+                    <ul class="dropdown-menu">
+                        <li><a href="/hesaplayıcılar/matematik/açı-dönüştürücü.html">Açı Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/eğim-hesaplayıcı.html">Eğim Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/faktöriyel-hesaplayıcı.html">Faktöriyel Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/iki-nokta-arası-hesaplayıcı.html">İki Nokta Arası Mesafe Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/oran-hesaplayıcı.html">Oran Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/sayı-tabanı-dönüştürücü.html">Sayı Tabanı Çevirici</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/yüzde-hesaplayıcı.html">Yüzde Hesaplayıcı</a></li>
+                    </ul>
+                </li>
+                <li id="menu-fizik" class="menu-item dropdown">
+                    Fizik
+                    <ul class="dropdown-menu">
+                        <li><a href="/hesaplayıcılar/fizik/kütle-dönüştürücü.html">Kütle Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/fizik/hacim-dönüştürücü.html">Hacim Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/fizik/termometre-dönüştürücü.html">Termometre Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/fizik/uzunluk-dönüştürücü.html">Uzunluk Dönüştürücü</a></li>
+                    </ul>
+                </li>
+                <li id="menu-saglik" class="menu-item dropdown">
+                    Sağlık
+                    <ul class="dropdown-menu">
+                        <li><a href="/hesaplayıcılar/sağlık/adet-günü-hesaplayıcı.html">Adet Günü Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/sağlık/bazal-metabolizma-hızı-hesaplayıcı.html">Bazal Metabolizma Hızı Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/sağlık/vücut-kitle-indeksi-hesaplayıcı.html">Vücut Kitle İndeksi Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/sağlık/kalori-hesaplayıcı.html">Kalori İhtiyacı Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/sağlık/su-ihtiyacı-hesaplayıcı.html">Su İhtiyacı Hesaplayıcı</a></li>
+                    </ul>
+                </li>
+                <li id="menu-ticaret-finans" class="menu-item dropdown">
+                    Ticaret-Finans
+                    <ul class="dropdown-menu">
+                        <li><a href="/hesaplayıcılar/ticaret-finans/arazi-birimi-dönüştürücü.html">Arazi Birim Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/ticaret-finans/enflasyon-hesaplayıcı.html">Enflasyon Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/ticaret-finans/kar-zarar-hesaplayıcı.html">Kar-Zarar Hesaplayıcı</a></li>
+                    </ul>
+                </li>
+                <li id="menu-zaman" class="menu-item dropdown">
+                    Zaman
+                    <ul class="dropdown-menu">
+                        <li><a href="/hesaplayıcılar/zaman/iki-tarih-arası-hesaplayıcı.html">İki Tarih Arası Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/zaman/yaş-hesaplayıcı.html">Yaş Hesaplayıcı</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main id="main-content">
+        <section id="enflasyon">
+            <div class="container">
+                <div class="calculate-container">
+                    <h1>Enflasyon Hesaplayıcı</h1>
+                    <form id="form">
+                        <div class="calculate">
+                            <div class="form-group" id="eski-fiyat-container">
+                                <label for="eski-fiyat">Eski Fiyat</label>
+                                <div class="right-items">
+                                    <input class="calc-inpt" placeholder="Eski fiyatı giriniz" min="0.01" type="number" id="eski-fiyat" step="0.01" required>
+                                </div>
+                            </div>
+                            <div class="form-group" id="yeni-fiyat-container">
+                                <label for="yeni-fiyat">Yeni Fiyat</label>
+                                <div class="right-items">
+                                    <input class="calc-inpt" placeholder="Yeni fiyatı giriniz" min="0.01" type="number" id="yeni-fiyat" step="0.01" required>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group result-container">
+                                <label for="result">Sonuç</label>
+                                <input class="calc-inpt" id="result" name="result" readonly value="">
+                                <button type="button" class="copy-btn" id="copy-button">
+                                    <img width="50" height="50" src="/img-icon/copy-icon.svg" alt="kopyalama-buton">
+                                </button>
+                            </div>
+                            <div class="calculation-btns">
+                                <button type="submit" id="calculation-btn">Hesapla</button>
+                                <button type="button" class="clear-button" id="clear-btn">
+                                    <img width="25px" height="25px" src="/img-icon/süpürge_icon.svg" alt="silme-buton">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    <section class="calculate-about">
+        <div class="about-wrapper">
+            <div class="calculate-about-content">
+                <h3>Enflasyon Hesaplama Aracı Hakkında</h3>
+                <p>Bu araç, yaşadığınız enflasyon oranını kolayca hesaplamanızı sağlar. 
+                    Eski ve yeni fiyatları girin, hesaplayıcımız size enflasyon oranını sunsun! 
+                    Böylece harcamalarınızı daha iyi yönetebilir ve bütçenizi planlamada bilinçli adımlar atabilirsiniz. 
+                </p>
+            </div>
+        </div>
+    </section>
+ 
+    </main>
+
+    <nav>
+        <div class="full-menu display-none" id="full-menu-list">
+            <section>
+                <div id="matematik" class="full-menu-item">
+                    <h4>Matematik</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="/hesaplayıcılar/matematik/açı-dönüştürücü.html">Açı Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/eğim-hesaplayıcı.html">Eğim Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/faktöriyel-hesaplayıcı.html">Faktöriyel Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/iki-nokta-arası-hesaplayıcı.html">İki Nokta Arası Mesafe Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/oran-hesaplayıcı.html">Oran Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/sayı-tabanı-dönüştürücü.html">Sayı Tabanı Çevirici</a></li>
+                        <li><a href="/hesaplayıcılar/matematik/yüzde-hesaplayıcı.html">Yüzde Hesaplayıcı</a></li>
+                    </ul>
+                </div>                    
+            </section>
+            
+            <section>
+                <div id="fizik" class="full-menu-item">
+                    <h4>Fizik</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="/hesaplayıcılar/fizik/kütle-dönüştürücü.html">Kütle Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/fizik/hacim-dönüştürücü.html">Hacim Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/fizik/termometre-dönüştürücü.html">Termometre Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/fizik/uzunluk-dönüştürücü.html">Uzunluk Dönüştürücü</a></li>
+                    </ul>
+                </div>                    
+            </section>
+
+            <section>
+                <div id="saglik" class="full-menu-item">
+                    <h4>Sağlık</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="/hesaplayıcılar/sağlık/adet-günü-hesaplayıcı.html">Adet Günü Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/sağlık/bazal-metabolizma-hızı-hesaplayıcı.html">Bazal Metabolizma Hızı Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/sağlık/vücut-kitle-indeksi-hesaplayıcı.html">Vücut Kitle İndeksi Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/sağlık/kalori-hesaplayıcı.html">Kalori İhtiyacı Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/sağlık/su-ihtiyacı-hesaplayıcı.html">Su İhtiyacı Hesaplayıcı</a></li>
+                    </ul>
+                </div>                    
+            </section>
+
+            <section>
+                <div id="ticaret-finans" class="full-menu-item">
+                    <h4>Ticaret-Finans</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="/hesaplayıcılar/ticaret-finans/arazi-birimi-dönüştürücü.html">Arazi Birim Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/ticaret-finans/enflasyon-hesaplayıcı.html">Enflasyon Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/ticaret-finans/kar-zarar-hesaplayıcı.html">Kar-Zarar Hesaplayıcı</a></li>
+                    </ul>
+                </div>                    
+            </section>
+
+            <section>
+                <div id="zaman" class="full-menu-item">
+                    <h4>Zaman</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="/hesaplayıcılar/zaman/iki-tarih-arası-hesaplayıcı.html">İki Tarih Arası Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/zaman/yaş-hesaplayıcı.html">Yaş Hesaplayıcı</a></li>
+                    </ul>
+                </div>                    
+            </section>
+
+            <section>
+                <div id="istatistik" class="full-menu-item">
+                    <h4>İstatistik</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="/hesaplayıcılar/istatistik/aritmetik-ortalama-hesaplayıcı.html">Aritmetik Ortalama Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/istatistik/medyan-hesaplayıcı.html">Medyan Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/istatistik/mod-hesaplayıcı.html">Mod Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/istatistik/standart-sapma-hesaplayıcı.html">Standart Sapma Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/istatistik/varyans-hesaplayıcı.html">Varyans Hesaplayıcı</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div id="geometri" class="full-menu-item">
+                    <h4>Geometri</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="/hesaplayıcılar/geometri/alan-hesaplayıcı.html">Alan Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/geometri/çevre-hesaplayıcı.html">Çevre Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/geometri/hipotenüs-hesaplayıcı.html">Hipotenüs Hesaplayıcı</a></li>
+                    </ul>
+                </div>                    
+            </section>
+
+            <section>
+                <div id="egitim-sinav" class="full-menu-item">
+                    <h4>Eğitim-Sınav (Yakında Eklenecek)</h4>
+                    <hr>
+                    <ul>
+                    </ul>
+                </div>                    
+            </section>
+
+            <section>
+                <div id="digerleri" class="full-menu-item">
+                    <h4>Diğerleri</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="/hesaplayıcılar/diğerleri/burç-hesaplayıcı.html">Burç Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/diğerleri/internet-birimi-dönüştürücü.html">İnternet Birimi Dönüştürücü </a></li>
+                        <li><a href="/hesaplayıcılar/diğerleri/kelime-sayısı-hesaplayıcı.html">Kelime Sayısı Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/diğerleri/mol-hesaplayıcı.html">Mol Hesaplayıcı</a></li>
+                        <li><a href="/hesaplayıcılar/diğerleri/mutfak-birimi-dönüştürücü.html">Mutfak Birimi Dönüştürücü</a></li>
+                        <li><a href="/hesaplayıcılar/diğerleri/renk-kodu-dönüştürücü.html">Renk Kodu Dönüştürücü</a></li>
+                    </ul>
+                </div>                    
+            </section>
+        </div>
+    </nav> 
+
+    <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>  
+        <ul class="menu">
+          <li><a href="/index.html">Anasayfa</a></li>
+          <li><a href="/hakkımızda.html">Hakkımızda</a></li>
+          <li><a href="/kullanıcı-sözleşmesi.html">Kullanıcı Sözleşmesi</a></li>
+          <li><a href="/iletişim.html">İletişim</a></li>
+        </ul>
+        <p class="copyright">© 2024 - <span id="nowdate"></span> / V - 1.0.0</p>
+        <img width="50" height="50" src="/img-icon/hesaplayıcı_logo_icon.svg" alt="hesaplayıcı-logo-icon">
+        <p class="wemath">WE ❤️ MATH </p>
+    </footer>
+
+    <script src="/src/index.js"></script>
+    <script src="/src/ticaret.js"></script>
+</body>
+</html>

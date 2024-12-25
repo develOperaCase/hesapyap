@@ -1,0 +1,348 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.display-none{
+    display: none;
+}
+
+.calculate-container {
+    background-color: #ffffff;
+    max-width: 470px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+.calculate-container h1{
+    padding: 15px 5px;
+    width: 100%;
+    font-size: 2rem;
+    background-color: #3586ff;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*Form-Veri Alma Yeri*/
+.calculate {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 470px;
+}
+
+@media (max-width: 480px){
+    .form-group :not(#result-container) {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .calculate {
+        gap: 40px;
+    }
+}
+
+.calc-inpt {
+    max-width: 180px;
+}
+
+
+.kısa-inpt {
+    max-width: 120px;
+}
+
+.daha-kısa-inpt{
+    max-width: 70px;
+}
+
+.uzun-label {
+    max-width: 150px;
+}
+
+label {
+    width: 100px; 
+    text-align: left;
+}
+
+textarea {
+    height: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    transition: border 0.3s ease ;
+    margin-left: 5px;
+    resize: none;
+}
+
+.checkbox-label {
+    width: auto;
+}
+
+textarea:focus {
+    border: 1px solid #3586ff;
+}
+
+.kısa-select {
+    display: inline;
+    overflow-y: scroll;
+}
+
+option {
+    overflow-y: scroll;
+    height: 100px;
+}
+
+input, select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    transition: border 0.3s ease ;
+    margin-left: 5px;
+}
+
+input:focus, select:focus {
+    border: 1px solid #3586ff;
+}
+
+hr {
+    margin-top: 5px;
+    width: 100%;
+    color: black;
+}
+
+/*Cevap kısmı*/
+
+#result {
+    background-color: #f5f5f5;
+    max-width: 180px;
+}
+
+.copy-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*Butonların CSS*/
+
+.calculation-btns {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: auto;
+}
+.right-items {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#calculation-btn{
+    background-color: #3586ff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 15pt;
+    cursor: pointer;
+    color: white;
+    font-weight: 300;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculate-container {
+        max-width: 400px;
+        margin: 50px 10px;
+    }
+
+    .calculate {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #calculation-btn {
+        font-size: 12pt;
+    }
+}
+
+.clear-button {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.16);
+    width: 40px;
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clear-button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Araç hakkında kısmı.*/
+
+/* Araç Hakkında Kısmı */
+
+.calculate-about-content {
+    padding: 40px 50px;
+    margin: 25px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Daha hafif ve modern gölge */
+    background-color: #f9fbfd; /* Hafif bir gri/mavi arka plan */
+    text-align: justify;
+    max-width: 800px;
+    border-radius: 25px; /* Daha yumuşak köşeler */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efektleri için geçiş */
+}
+
+.calculate-about-content:hover {
+    transform: translateY(-5px); /* Hafif yukarı kayma efekti */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Hoverda daha belirgin gölge */
+}
+
+@media (max-width: 768px) {
+    .calculate-about-content {
+        padding: 30px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculate-about-content {
+        padding: 20px;
+    }
+}
+
+.calculate-about-content h3 {
+    font-size: 1.7rem; /* Biraz daha büyük başlık */
+    color: #3586ff; /* Daha canlı bir mavi tonu */
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px; /* Daha şık bir yazı stili için harf aralığı */
+}
+
+.calculate-about-content p {
+    font-size: 1.1rem; /* Daha büyük ve okunaklı metin */
+    line-height: 1.8; /* Daha geniş satır aralığı */
+    color: #3a3f50; /* Daha koyu bir gri */
+    margin-bottom: 20px;
+}
+
+.calculate-about-content a {
+    color: #1e90ff; /* Linklere modern bir mavi tonu */
+    font-weight: 600;
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    border-bottom: 2px solid #1e90ff; /* Alt çizgi yerine alt kenarlık */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.calculate-about-content a:hover {
+    color: #3586ff; /* Hoverda farklı bir mavi tonu */
+    border-bottom: 2px solid #3586ff;
+}
+
+.calculate-about-content span {
+    font-weight: 700;
+    color: #1d3557; /* Daha koyu bir vurgu rengi */
+}
+
+
+/*eklemeler*/
+
+.hesaplama-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Tooltip Kısmı */
+.tooltip {
+    margin-left: 5px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff6f61; /* Daha modern ve yumuşak kırmızı ton */
+    font-weight: 500;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.tooltip:hover {
+    color: #ff3b30; /* Hover sırasında renk geçişi */
+    transform: translateY(-2px); /* Hover efekti ile hafif yükselme */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    max-width: 200px; /* Tooltip genişliği arttırıldı */
+    background-color: #333; /* Modern, koyu gri arka plan */
+    color: #fff;
+    text-align: center;
+    border-radius: 12px; /* Daha yuvarlak köşeler */
+    padding: 12px; /* İçerik alanı arttırıldı */
+    position: absolute;
+    z-index: 999;
+    bottom: 100%; /* Tooltip'i biraz daha yukarıya taşıdık */
+    left: 50%;
+    transform: translateX(-50%) scale(0.8); /* Tooltip'e giriş efekti */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Modern gölge efekti */
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent; /* Tooltip'in altına ok efekti */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-12px) scale(1); /* Tooltip'in görünür olma ve animasyon efekti */
+}
+
+.tooltip a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.tooltip a:hover {
+    color: #d1d1d1; /* Link hover'ı için daha yumuşak bir ton */
+}
+
+.display-none {
+    display: none;
+}

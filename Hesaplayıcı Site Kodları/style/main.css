@@ -1,0 +1,327 @@
+main {
+    padding-top: 75px;
+    text-align: center;
+}
+
+h2 {
+    color: #3586ff;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.display-none {
+    display: none;
+}
+
+/*Hero kısmı*/
+
+.hero {
+    background: url('/img-icon/hero-foto.jpeg') no-repeat center center;
+    background-size: cover; /* Arka planı kapsayacak şekilde ölçekle */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Hero kısmına kutu gölgesi */
+}
+
+.hero .container {
+    max-width: 100%;
+    margin: 0 auto; /* Container'ı sayfa ortasına almak için */
+    flex-direction: column;
+    display: flex; /* Flex konteynerı olarak ayarla */
+    justify-content: center; /* Öğeleri yatayda ortala */
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    background-color: rgba(53, 134, 255, 0.4); /* Arka plan rengi, şeffaflık efekti */
+    backdrop-filter: blur(3px); /* Bulanık cam efekti */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh; /* Görseli tam ekran yüksekliği yap */
+        background-position: center center; /* Ortada kalmasını sağla */
+    }
+
+    .hero .container {
+        height: 100vh;
+        padding: 10px; /* Daha küçük padding */
+        gap: 5px; /* Daha az boşluk */
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#slogan {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/*Hesaplayıcılar kısmı*/
+
+#relevant-part .container {
+    padding: 40px;
+    width: 60%;
+    margin: 0px auto;
+}
+
+#relevant-part .calculates {
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Kutucuklar arasındaki boşluk */
+    justify-items: center;
+}
+
+#relevant-part .calculate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#relevant-part h3 {
+    font-size: 25px;
+    color: #1e4a8a;
+
+}
+
+#relevant-part ul {
+    text-align: center  ;
+    list-style-type: none;
+}
+
+#relevant-part a {
+    text-decoration: none;
+    color: #7a8795;
+    transition: color 0.3s ease ;
+}
+
+#relevant-part a:hover{
+    color: #3586ff;
+}
+
+
+/*Hakkındalar ve kısa bilgi kısmı*/
+
+#about .container {
+    max-width:75%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    
+}
+
+#about .container ul {
+    list-style-type: none;
+    text-align: start;
+    list-style-image: url("/img-icon/tic_icon.svg");
+    list-style-position: inside;
+}
+
+#about .container li {
+    margin: 20px 0;
+    background-color: white;
+    gap: 10px;
+    font-size: 25px;
+    color: #7a8795;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#about li:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Makaleler Kısmı */
+
+#articles .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 80%; /* Biraz daha geniş yap */
+    padding: 20px; /* Kenarlarda boşluk ekle */
+    gap: 40px; /* Kartlar arası boşluğu artır */
+}
+
+#articles .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Daha ferah bir boşluk */
+}
+
+#articles .article-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; /* Başlangıç hizalaması */
+    background: linear-gradient(145deg, #f3f4f6, #ffffff); /* Hafif bir degrade */
+    padding: 30px; /* Daha geniş padding */
+    border-radius: 20px; /* Daha yumuşak köşeler */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    width: 100%;
+    max-width: 900px; /* Maksimum genişlik belirle */
+}
+
+#articles .article-card:hover {
+    transform: translateY(-10px); /* Hoverda yukarı kaldırma efekti */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #e0e7ff, #ffffff); /* Hoverda daha canlı bir degrade */
+}
+
+#articles .article-card img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Görseller için gölge */
+    transition: transform 0.3s ease;
+}
+
+#articles .article-card img:hover {
+    transform: scale(1.05); /* Görseli büyütme efekti */
+}
+
+#articles .article-text {
+    text-align: left;
+    color: #1d3557; /* Daha modern bir koyu mavi */
+    font-size: 16pt; /* Biraz daha küçük ve zarif */
+    font-weight: 600; /* Daha kalın yazı */
+    line-height: 1.6; /* Daha iyi okunabilirlik için satır aralığı */
+    margin-bottom: 15px;
+}
+
+#articles .article-text p {
+    color: #5a7184; /* Alt metin için daha yumuşak bir ton */
+    font-size: 14pt;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Düğme Stili */
+#articles .read-more {
+    text-decoration: none;
+    color: white;
+    background: #1e90ff; /* Modern bir mavi tonu */
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14pt;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#articles .read-more:hover {
+    background: #1c7ed6; /* Daha koyu bir mavi hover efekti */
+    transform: translateY(-5px);
+}
+
+
+/*Download-Store*/
+
+#download-store .container {
+    margin-top: 80px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#download-store .small-container {
+    position: relative;
+}
+
+#download-store .z-container {
+    position: absolute;
+    left: -200px;
+    top: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#download-store .z-container h3 {
+    font-size: 25pt;
+    color: #171A22;
+}
+
+#download-store .img-container {
+    display: flex;
+    gap: 10px;
+}
+
+#download-store #telefon-icon {
+    position: absolute;
+    right: -70px;
+    bottom: 50px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1024px) {
+    #download-store .container {
+        padding: 30px;
+    }
+
+    #download-store .z-container {
+        left: -100px; /* Ortada kalması için sola çekme */
+        padding: 15px;
+    }
+
+    #download-store #telefon-icon {
+        right: -50px; /* Küçük ekranlar için ikonun yerini değiştirme */
+        bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #download-store .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #download-store .small-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #download-store .z-container {
+        left: -20px; 
+        max-width: 90%; /* Daha büyük ekranlarda daha geniş, küçük ekranlarda daralacak */
+    }
+
+    #download-store #telefon-icon {
+        right: 0;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #download-store .z-container h3 {
+        font-size: 20pt; /* Mobilde yazı boyutunu küçültme */
+    }
+
+    #download-store #telefon-icon {
+        right: -30px; /* Daha küçük ekranlarda ikonun yerini değiştirme */
+        bottom: 10px;
+    }
+}
+
